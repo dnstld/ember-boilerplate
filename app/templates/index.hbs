@@ -1,0 +1,11 @@
+{{page-title "User"}}
+
+<ul>
+  {{#each @model as |user|}}
+  <li>
+    <LinkTo @route="user" @model={{user}}>
+      {{user.name}} ({{user.username}})
+    </LinkTo>
+  </li>
+  {{/each}}
+</ul>
